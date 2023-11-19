@@ -6,7 +6,7 @@ if (!process.env.MONGO_URL) {
 }
 
 const uri = process.env.MONGO_URL
-const options = {}
+const options = {}  
 
 let client;
 let clientPromise;
