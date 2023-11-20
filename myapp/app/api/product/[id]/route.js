@@ -31,7 +31,7 @@ export async function DELETE(req, ctx) {
 }
 export async function PUT(req, ctx) {
     await db.connect()
-
+        
     const id = ctx.params.id
 
     try {

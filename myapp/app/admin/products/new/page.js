@@ -63,14 +63,12 @@ const NewProduct = () => {
     }
   };
 
-  // Handle image preview
   const handleImageChange = (e) => {
     const file = e.target.files[0];
 
     if (file) {
       setPhoto(file);
 
-      // Use FileReader to create a preview URL
       const reader = new FileReader();
       reader.onloadend = () => {
         setPreviewUrl(reader.result);
@@ -81,7 +79,7 @@ const NewProduct = () => {
 
   return (
     <section className="grid md:col-span-7 lg:col-span-5">
-           <div className='flex justify-around w-[1200px]'>
+           <div className='flex justify-around max-w-5xl mx-auto'>
             <Link href='/admin/products/new'>New Products</Link>
             <Link href='/admin/products/all'>All Products</Link>
         </div>
