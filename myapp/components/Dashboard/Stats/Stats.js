@@ -22,7 +22,10 @@ const Stats = () => {
                </div>
             </div>
             <div className='col-span-4 bg-orange-200'>
-                stats
+            <div className='flex flex-col'>
+               <p className='text-center'>Total Users</p>
+                <span className='text-center'>{stats.userCount}</span>
+               </div>
             </div>
         </div>
     </section>

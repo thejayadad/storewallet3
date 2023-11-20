@@ -14,7 +14,7 @@ const Navbar = () => {
       }
     if (!session) {
         return (
-          <div className="bg-bgGray flex items-center">
+          <div className="bg-gray-800 z-[40]  flex items-center">
             <div className="text-center w-full">
               <button onClick={() => signIn()} className="bg-white p-2 px-4 rounded-lg">Login with Google</button>
             </div>
@@ -28,7 +28,7 @@ const Navbar = () => {
                 Logo
             </span>
             <div className='flex gap-4'>
-                    {session?.user?.email === 'thejayadad@gmail.com' && (
+                    {session?.user?.email === 'thejayadad@gmail.com' || 'jaydunb12@gmail.com' && (
                     <Link href="/admin">
                     <span className="text-blue-500">Admin</span>
                     </Link>
